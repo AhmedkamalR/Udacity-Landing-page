@@ -15,7 +15,7 @@
 const currentSections = document.querySelectorAll('section');
 const Ul = document.querySelector('ul');
 const documentFragment = document.createDocumentFragment();
-const goTop = document.getElementById('topScroll');
+const goTop = document.getElementById('goTopButton');
 /**
  * Define Global Variables
  *
@@ -54,7 +54,7 @@ currentSections.forEach((section) => {
 Ul.appendChild(documentFragment);
 
 window.addEventListener('scroll', () => {
-  //  For Chek What Is Section On Screen Now and remove the active class
+  //  For Check What Is Section On Screen Now and remove the active class
   const activeSection = document.getElementsByClassName('your-active-class')[0];
 
   activeSection !== undefined
